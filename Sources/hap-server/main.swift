@@ -46,6 +46,8 @@ let device = Device(name: "Bridge", pin: "123-44-321", storage: storage, accesso
     .GarageDoorOpener(info: .init(name: "Garage")),
     .LockMechanism(info: .init(name: "Front Door Lock")),
     .SecuritySystem(info: .init(name: "Alarm")),
+	.SimpleLightbulb(info: .init(name: "Simple")),
+	.DimmableLightbulb(info: .init(name: "Dimmable")),
 ])
 device.onIdentify.append({ acc in
     logger.info("Got identified: \(String(describing: acc))")
