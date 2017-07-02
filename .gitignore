@@ -3,3 +3,4 @@
 /.build
 Switch
 Package.pins
+/db/*
